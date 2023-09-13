@@ -1,0 +1,55 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(209, 207, 207);
+}
+
+button {
+    height: 35px;
+    font-style: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 10px 10px 25px;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+#buttonSave {
+    background-color: mediumslateblue;
+    color: white;
+    box-shadow: none;
+}
+
+#deleteButton {
+    color:red;
+    font-weight: bolder;
+}
