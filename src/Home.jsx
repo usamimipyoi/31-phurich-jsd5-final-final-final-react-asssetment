@@ -30,9 +30,9 @@ const Home = () => {
     <div>
       <div>
         <div>
-          <header>
+{/*       <header>
             <h1>Generation Thailand <br />React - Assessment</h1>
-          </header>
+          </header> */}
           <a href="/User"><button>User Home Sector</button></a>
           <a href="/Admin"><button>Admin Home Sector</button></a>
           <button
