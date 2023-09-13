@@ -1,3 +1,5 @@
 {
-    "rewrites": [{ "source": "/Owner", "destination": "/Owner.jsx" }]
+    "rewrites":  [
+        {"source": "/(.*)", "destination": "/"}
+    ]
 }
