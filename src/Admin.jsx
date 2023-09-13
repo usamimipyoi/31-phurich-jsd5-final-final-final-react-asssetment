@@ -2,30 +2,30 @@ import { useEffect, useState } from 'react';
 import { mockEmployees } from './Home';
 import Home from './Home';
 
-const shoutTest = () => {
-    console.log({mockEmployees})
-}
-
 const admin = () => {
 
-    const [firstname, setFirstname] = useState();
-    const [lastname, setLastname] = useState();
-    const [position, setPosition] = useState();
+    const [members, setMembers] = useState(mockEmployees)
+    const [firstname, setFirstname] = useState([]);
+    const [lastname, setLastname] = useState([]);
+    const [position, setPosition] = useState([]);
 
-    const [arrayEmployees, setArratEmployees] = useState(mockEmployees);
+    /* useEffect(() => {},[mockEmployees]) */
 
-    useEffect(() => {},[mockEmployees])
+    const shoutTest = () => {
+        console.log({members})
+    }
 
-    const submitHandler = (firstname,lastname,position) => {
+    const addMembers = (firstname,lastname,position) => {
         const addNew = {
-            id: mockEmployees.length,
+            id: members.length,
             name: firstname,
             lastname: lastname,
             position: position,
         }
         console.log(addNew)
-        addEmployees(addNew);
-        console.log(mockEmployees)
+        members.push(addNew)
+        setMembers(members)
+        console.log(members)
 
         setFirstname('');
         setLastname('');
@@ -33,11 +33,9 @@ const admin = () => {
     } 
 
     const deleteEmployee = (id) => {
-        const newArray = mockEmployees.filter(item => item.id !== id)
+        const newArray = members.filter(item => item.id !== id)
         console.log({newArray})
-        mockEmployees.length = 0;
-        Array.prototype.push.apply(mockEmployees,newArray)
-        console.log({mockEmployees})
+        console.log({members})
     } 
 
     return (
@@ -89,7 +87,7 @@ const admin = () => {
                         type='button' 
                         id='buttonSave'
                         onClick = {
-                        () => submitHandler(firstname,lastname,position)
+                        () => addMembers(firstname,lastname,position)
                         }>Save</button>
                     <button 
                         type='button' 
