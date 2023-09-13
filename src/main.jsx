@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     </>
   },  
   {
-    path: '/owner',
+    path: '/Owner',
     element: <>
       <Navbar />
       <Owner />
