@@ -37,7 +37,7 @@ const Home = () => {
           <a href="/Admin"><button>Admin Home Sector</button></a>
           <button
             onClick={() => console.log(sector)}
-          >Test sector</button>
+          >Test sector (check dev log)</button>
         </div>
       </div>
     </div>
