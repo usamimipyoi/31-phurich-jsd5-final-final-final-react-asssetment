@@ -4,7 +4,16 @@ import Home from './Home';
 const User = () => {
     return (
         <div>
-            <Home />
+            <div>
+                <header>
+                    <h1>Generation Thailand <br />React - User Sector</h1>
+                </header>
+                <a href="/User"><button>User Home Sector</button></a>
+                <a href="/Admin"><button>Admin Home Sector</button></a>
+                <button
+                    onClick={() => console.log(sector)}
+                >Test sector</button>
+            </div>
             <table>
                 <thead>
                     <tr>

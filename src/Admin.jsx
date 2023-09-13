@@ -42,7 +42,16 @@ const admin = () => {
 
     return (
         <div>
-            <Home />
+            <div>
+                <header>
+                    <h1>Generation Thailand <br />React - Admin Sector</h1>
+                </header>
+                <a href="/User"><button>User Home Sector</button></a>
+                <a href="/Admin"><button>Admin Home Sector</button></a>
+                <button
+                    onClick={() => console.log(sector)}
+                >Test sector</button>
+            </div>
             <div>
                 <h4>Create User Here</h4>
                 <form action="">

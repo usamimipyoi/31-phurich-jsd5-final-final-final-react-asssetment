@@ -17,9 +17,6 @@ const router = createBrowserRouter([
     path: '/',
     element: <>
       <Navbar />
-      <header>
-        <h1>Generation Thailand <br />React - Assessment</h1>
-      </header>
       <Home />
     </>
   },  
@@ -27,9 +24,6 @@ const router = createBrowserRouter([
     path: '/User',
     element: <>
       <Navbar />
-      <header>
-        <h1>Generation Thailand <br />React - User Sector</h1>
-      </header>
       <User />
     </>
   },
@@ -37,9 +31,6 @@ const router = createBrowserRouter([
     path: '/Admin',
     element: <>
       <Navbar />
-      <header>
-        <h1>Generation Thailand <br />React - Admin Sector</h1>
-      </header>
       <Admin />
     </>
   },
