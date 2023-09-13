@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <>
       <Navbar />
       <header>
-            <h1>Generation Thailand <br />React - Assessment</h1>
+        <h1>Generation Thailand <br />React - Assessment</h1>
       </header>
       <Home />
     </>
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
     element: <>
       <Navbar />
       <header>
-            <h1>Generation Thailand <br />React - User Sector</h1>
-          </header>
+        <h1>Generation Thailand <br />React - User Sector</h1>
+      </header>
       <User />
     </>
   },
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
     element: <>
       <Navbar />
       <header>
-            <h1>Generation Thailand <br />React - Admin Sector</h1>
+        <h1>Generation Thailand <br />React - Admin Sector</h1>
       </header>
       <Admin />
     </>
